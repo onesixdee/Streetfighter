@@ -3,9 +3,8 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+ 
     box-sizing: border-box;
-    /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
     -webkit-margin-start: 0px;
@@ -18,9 +17,7 @@
 
 
 
-/* General styles
-    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
-*/
+/* General styles */
 
 body {
 	background-color: #000;
@@ -36,18 +33,14 @@ body {
   	z-index: 1;
 }
 
-/* Header styles
-    (all the styles inside the < header > or < nav > tags)
-*/
+/* Header styles */
 
 
-/* Content styles
-    (all the styles inside the < sections > or < aside > tags)
-*/
-.ryu-cool,
+/* Content styles */
 .ryu-still,
 .ryu-ready, 
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
 	width: 659px;
 	height: 494px;
 	display: none;
@@ -55,8 +48,8 @@ body {
 
 .ryu-still {
 	background-image: url('../images/ryu-standing-still.png');
-	
-}
+
+	}        
 
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');
@@ -93,9 +86,27 @@ body {
   	float: left;
 }
 
-/* Footer styles
-    (all the styles inside the < footer > tag)
-*/
+.ryu-container .ryu {
+	position: absolute;
+}
+
+.text .how-to {
+	float: right;
+	margin-top: 5rem;
+}
+
+.how-to p {
+	width: 40%;
+	margin-bottom: 2rem;
+	line-height: 3rem;
+	font-family: 'Julee', serif;
+	font-size: 30px;
+}
+
+.how-to p + p {
+	margin-left: 3rem;
+}
+/* Footer styles */
 
 
 /* Responsive styles

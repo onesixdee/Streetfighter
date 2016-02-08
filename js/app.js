@@ -1,13 +1,12 @@
 $(document).ready(function() {
-
-$('.ryu-action').hide();
-$('.ryu-still').show();
+	$('.ryu-action').hide();
+	$('.ryu-still').show();
 
 	$('.ryu').mouseenter(function() {
 		$('.ryu-action').hide();
 		$('.ryu-ready').show();
 	 })
-	 $('.ryu').mouseleave(function() { 
+	.mouseleave(function() { 
 		$('.ryu-action').hide();
  		$('.ryu-still').show();
 	})
@@ -29,14 +28,14 @@ $('.ryu-still').show();
 	});
 });
 
-$(document).keydown(function(e) {
-    if(e.keyCode==88){
+$(document).keydown(function(event) {
+    if(event.which==88){
      	$('.ryu-action').hide();
 		$('.ryu-cool').show();
 	}
 })
-$(document).keyup(function(e) {
-    if(e.keyCode==88){
+$(document).keyup(function(event) {
+    if(event.which==88){
 		$('.ryu-action').hide();
 		$('.ryu-still').show();
 	}
@@ -59,21 +58,3 @@ function playHadouken() {
 
 
 
-
-
-
-
-
-
-
-// $(document).ready(function(){   
-
-	// event handler that listens for the page to be ready, then handles it by calling the function you passed in.
-
- // $('.ryu').mouseenter(function(){
-
- 	//inside the function, you select the DOM element with the class .ryu and attach a new event handler
-
- 	// this event handler is attached to every element with the ryu class
- 	// and the function you passed in, called the "callback function" is stored in the browser memory
- 	// every time the mouseenter event happens, the browser invokes that callback function from it's memory in reponse to the event
