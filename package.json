@@ -1,0 +1,22 @@
+{
+  "name": "jquery-streetfighter",
+  "version": "1.0.0",
+  "description": "Thinkful StreetFighter Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onesixdee/jquery-streetfighter.git"
+  },
+  "author": "Diana Duong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onesixdee/jquery-streetfighter/issues"
+  },
+  "homepage": "https://github.com/onesixdee/jquery-streetfighter#readme",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
